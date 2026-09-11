@@ -28,7 +28,6 @@ jobs:
             count=$((count + 1))
           done
           echo "Deleted ${count} artifact(s)."
-
       - name: Delete all Actions caches
         env:
           GH_TOKEN: ${{ github.token }}
@@ -43,4 +42,4 @@ jobs:
           done
           echo "Deleted ${count} cache(s)."
 
-# Cleanup triggered 2026-09-03 to reclaim account Actions storage.
+# Cleanup triggered 2026-09-12 to reclaim account Actions storage.
