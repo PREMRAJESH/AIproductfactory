@@ -1,6 +1,6 @@
-import { text, list, terms, normalize, clamp, daysSince } from '../nlp-utils.js'
-import { matchedCapabilities, lexicalRelevance, repositoryHealth } from '../scoring.js'
-import type { ResearchProfileV12, DeepResearchSignalV12, SourceLink } from '../types.js'
+import { text, list, terms, normalize, clamp, daysSince } from './nlp-utils.js'
+import { matchedCapabilities, lexicalRelevance, repositoryHealth } from './scoring.js'
+import type { ResearchProfileV12, DeepResearchSignalV12, SourceLink } from './types.js'
 
 export function githubHeaders() {
   const token = process.env.GITHUB_TOKEN
