@@ -1,4 +1,4 @@
-import type { SelectedRepo, NormalizedBrief, ProductSystemOutput } from './types.js'
+import type { SelectedRepo, NormalizedBrief, ProductSystemOutput } from './types'
 
 export function buildScores(selected: SelectedRepo[], brief: NormalizedBrief): ProductSystemOutput['scores'] {
   const coveredRoles = new Set(selected.map(repo => repo.role))

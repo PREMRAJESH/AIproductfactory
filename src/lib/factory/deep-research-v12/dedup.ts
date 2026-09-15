@@ -1,5 +1,5 @@
-import { text } from './nlp-utils.js'
-import type { DeepResearchSignalV12 } from './types.js'
+import { text } from './nlp-utils'
+import type { DeepResearchSignalV12 } from './types'
 
 export function dedupeSignals(signals: DeepResearchSignalV12[]) {
   const seen = new Map<string, DeepResearchSignalV12>()

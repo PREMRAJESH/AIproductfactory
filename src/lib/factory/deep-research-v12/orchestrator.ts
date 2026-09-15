@@ -1,8 +1,9 @@
-import { clamp } from './nlp-utils.js'
-import { buildProfile } from './profile-builder.js'
-import { githubCandidates, sourceProofSignals, huggingFace, gitlab, tavily, arxiv, githubReleases } from './github-adapters.js'
-import { dedupeSignals } from './dedup.js'
-import { SOURCE_CATALOG } from './constants.js'
+import { clamp } from './nlp-utils'
+import { buildProfile } from './profile-builder'
+import { githubCandidates } from './github'
+import { sourceProofSignals, huggingFace, gitlab, tavily, arxiv, githubReleases } from './github-adapters'
+import { dedupeSignals } from './dedup'
+import { SOURCE_CATALOG } from './constants'
 
 export async function runDeepResearchV12(idea: string, graph: Record<string, any>, seedRepos: string[]) {
   const profile = buildProfile(idea, graph)

@@ -1,3 +1,3 @@
-export { composeProductSystem, resolveFactoryIdea } from './composer/index.js'
-export { ProductSystemRequestSchema } from './composer/types.js'
-export type { ProductSystemRequest, ProductSystemOutput } from './composer/types.js'
+export { composeProductSystem, resolveFactoryIdea } from './composer'
+export { ProductSystemRequestSchema } from './composer/types'
+export type { ProductSystemRequest, ProductSystemOutput } from './composer/types'

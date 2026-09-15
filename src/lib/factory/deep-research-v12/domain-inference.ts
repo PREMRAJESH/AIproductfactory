@@ -1,4 +1,4 @@
-import { terms } from './nlp-utils.js'
+import { terms } from './nlp-utils'
 
 export function inferDomain(idea: string) {
   const value = idea.toLowerCase()

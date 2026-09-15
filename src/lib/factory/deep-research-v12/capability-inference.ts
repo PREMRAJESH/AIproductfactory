@@ -1,5 +1,5 @@
-import { CAPABILITY_RULES, GENERIC_CAPABILITIES } from './constants.js'
-import { text, list, normalize, terms, expand } from './nlp-utils.js'
+import { CAPABILITY_RULES, GENERIC_CAPABILITIES } from './constants'
+import { text, list, normalize, terms, expand } from './nlp-utils'
 
 export function graphCapabilities(graph: Record<string, any>) {
   const output: string[] = []

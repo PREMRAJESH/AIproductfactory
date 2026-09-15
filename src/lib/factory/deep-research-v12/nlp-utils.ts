@@ -1,4 +1,4 @@
-import { STOP, SYNONYMS } from './constants.js'
+import { STOP, SYNONYMS } from './constants'
 
 export function text(value: unknown) { return typeof value === 'string' ? value.trim() : '' }
 export function list<T = any>(value: unknown): T[] { return Array.isArray(value) ? value as T[] : [] }

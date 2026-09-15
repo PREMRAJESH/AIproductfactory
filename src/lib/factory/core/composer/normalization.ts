@@ -1,7 +1,7 @@
-import { classifyIntent } from '../intent-classifier.js'
-import { REGULATED_INDUSTRIES, FIELD_ALIASES } from './constants.js'
-import { slugify, unique } from './utils.js'
-import type { FieldTag, NormalizedBrief, ProductSystemRequest } from './types.js'
+import { classifyIntent } from '../intent-classifier'
+import { REGULATED_INDUSTRIES, FIELD_ALIASES } from './constants'
+import { slugify, unique } from './utils'
+import type { FieldTag, NormalizedBrief, ProductSystemRequest } from './types'
 
 function normalizeFields(inputFields: string[], seedText: string): FieldTag[] {
   const tags: FieldTag[] = []

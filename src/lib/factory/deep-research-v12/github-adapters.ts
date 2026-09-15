@@ -1,7 +1,7 @@
-import { text } from './nlp-utils.js'
-import { matchedCapabilities, lexicalRelevance } from './scoring.js'
-import { json, githubHeaders } from './github.js'
-import type { ResearchProfileV12, DeepResearchSignalV12 } from './types.js'
+import { text } from './nlp-utils'
+import { matchedCapabilities, lexicalRelevance } from './scoring'
+import { json, githubHeaders } from './github'
+import type { ResearchProfileV12, DeepResearchSignalV12 } from './types'
 
 export function sourceProofSignals(repo: DeepResearchSignalV12) {
   const inspection = repo.inspection

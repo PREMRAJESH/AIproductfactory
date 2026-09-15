@@ -1,6 +1,6 @@
-import { CAPABILITY_RULES } from './constants.js'
-import { text, terms, expand, stem, clamp, daysSince } from './nlp-utils.js'
-import type { ResearchProfileV12 } from './types.js'
+import { CAPABILITY_RULES } from './constants'
+import { text, terms, expand, stem, clamp, daysSince } from './nlp-utils'
+import type { ResearchProfileV12 } from './types'
 
 export function evidenceForCapability(capability: string, corpus: string) {
   const rule = CAPABILITY_RULES.find((item) => item.name === capability)

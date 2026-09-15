@@ -1,5 +1,5 @@
-import { REPO_CATALOG } from './constants.js'
-import type { RepoRole, RepoCatalogItem, NormalizedBrief, SelectedRepo } from './types.js'
+import { REPO_CATALOG } from './constants'
+import type { RepoRole, RepoCatalogItem, NormalizedBrief, SelectedRepo } from './types'
 
 export function scoreRepoForRole(repo: RepoCatalogItem, role: RepoRole, brief: NormalizedBrief): number {
   let score = repo.maturity
@@ -60,7 +60,7 @@ export async function hydrateRepoStars(repos: SelectedRepo[]): Promise<SelectedR
 }
 
 export async function selectRepos(brief: NormalizedBrief, blueprint: { productName: string }): Promise<SelectedRepo[]> {
-  const { ROLE_ORDER } = await import('./constants.js')
+  const { ROLE_ORDER } = await import('./constants')
   const chosenNames = new Set<string>()
   const selections: SelectedRepo[] = []
 

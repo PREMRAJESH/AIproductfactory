@@ -1,13 +1,13 @@
-import { ProductSystemRequestSchema, type ProductSystemRequest, type ProductSystemOutput } from './types.js'
-import { toTitleCase } from './utils.js'
-import { normalizeBrief } from './normalization.js'
-import { buildBlueprint } from './blueprint.js'
-import { selectRepos } from './repo-selector.js'
-import { buildArchitecture } from './architecture.js'
-import { buildContracts } from './contracts.js'
-import { buildScores } from './scoring.js'
-import { buildCompositionExplanation } from './explanation.js'
-import { makeBuildStarter } from './scaffold.js'
+import { ProductSystemRequestSchema, type ProductSystemRequest, type ProductSystemOutput } from './types'
+import { toTitleCase } from './utils'
+import { normalizeBrief } from './normalization'
+import { buildBlueprint } from './blueprint'
+import { selectRepos } from './repo-selector'
+import { buildArchitecture } from './architecture'
+import { buildContracts } from './contracts'
+import { buildScores } from './scoring'
+import { buildCompositionExplanation } from './explanation'
+import { makeBuildStarter } from './scaffold'
 
 export function resolveFactoryIdea(input: { industry?: string; idea?: string; fields?: string[] }): string {
   const idea = input.idea?.trim()

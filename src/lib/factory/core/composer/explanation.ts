@@ -1,6 +1,6 @@
-import { ROLE_ORDER } from './constants.js'
-import { reposForRole } from './architecture.js'
-import type { ProductBlueprint, SelectedRepo, NormalizedBrief, ProductSystemOutput } from './types.js'
+import { ROLE_ORDER } from './constants'
+import { reposForRole } from './architecture'
+import type { ProductBlueprint, SelectedRepo, NormalizedBrief, ProductSystemOutput } from './types'
 
 export function buildCompositionExplanation(
   blueprint: ProductBlueprint,

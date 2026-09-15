@@ -1,4 +1,4 @@
-import type { RepoRole, RepoCatalogItem } from './types.js'
+import type { RepoRole, RepoCatalogItem } from './types'
 
 export const REGULATED_INDUSTRIES = new Set([
   'healthcare',
@@ -12,7 +12,7 @@ export const REGULATED_INDUSTRIES = new Set([
   'pharma',
 ])
 
-export const FIELD_ALIASES: Array<{ matches: string[]; tag: import('./types.js').FieldTag }> = [
+export const FIELD_ALIASES: Array<{ matches: string[]; tag: import('./types').FieldTag }> = [
   { matches: ['ai', 'artificial intelligence', 'llm', 'agents', 'agentic'], tag: 'ai' },
   { matches: ['automation', 'rpa', 'ops', 'operations'], tag: 'automation' },
   { matches: ['analytics', 'bi', 'dashboard', 'reporting'], tag: 'analytics' },

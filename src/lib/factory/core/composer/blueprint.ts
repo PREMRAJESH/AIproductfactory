@@ -1,5 +1,5 @@
-import { toTitleCase, includesAny } from './utils.js'
-import type { NormalizedBrief, ProductBlueprint } from './types.js'
+import { toTitleCase, includesAny } from './utils'
+import type { NormalizedBrief, ProductBlueprint } from './types'
 
 export function buildBlueprint(brief: NormalizedBrief): ProductBlueprint {
   const name = toTitleCase(brief.industry)

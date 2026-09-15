@@ -1,9 +1,9 @@
-import { ROLE_ORDER } from './constants.js'
-import { reposForRole } from './architecture.js'
-import type { SelectedRepo, ProductBlueprint, ProductSystemOutput } from './types.js'
+import { ROLE_ORDER } from './constants'
+import { reposForRole } from './architecture'
+import type { SelectedRepo, ProductBlueprint, ProductSystemOutput } from './types'
 
 export function makeBuildStarter(selected: SelectedRepo[], blueprint: ProductBlueprint): ProductSystemOutput['build_starter'] {
-  const roleRepo = (role: import('./types.js').RepoRole) => reposForRole(selected, role).map(repo => repo.name).join(', ')
+  const roleRepo = (role: import('./types').RepoRole) => reposForRole(selected, role).map(repo => repo.name).join(', ')
 
   return {
     folder_structure: [

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import {
-  AlertTriangle, ArrowRight, BadgeCheck, BarChart3, BrainCircuit, CheckCircle2,
+  AlertTriangle, ArrowRight, BadgeCheck, BarChart3, BrainCircuit, Check, CheckCircle2,
   ChevronDown, CircleDollarSign, Clipboard, Code2, ExternalLink, Github, Layers3,
   Loader2, LockKeyhole, Network, PackageSearch, Rocket, Search, ShieldCheck, Sparkles,
   Stars, WandSparkles, Zap,

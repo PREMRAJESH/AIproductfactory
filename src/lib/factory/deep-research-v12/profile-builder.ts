@@ -1,8 +1,8 @@
-import { CAPABILITY_RULES, GENERIC_CAPABILITIES } from './constants.js'
-import { terms, expand, stem, clamp } from './nlp-utils.js'
-import { inferCapabilities } from './capability-inference.js'
-import { inferDomain, productArchetype } from './domain-inference.js'
-import type { QueryPlan, ResearchProfileV12 } from './types.js'
+import { CAPABILITY_RULES, GENERIC_CAPABILITIES } from './constants'
+import { terms, expand, stem, clamp } from './nlp-utils'
+import { inferCapabilities } from './capability-inference'
+import { inferDomain, productArchetype } from './domain-inference'
+import type { QueryPlan, ResearchProfileV12 } from './types'
 
 export function buildProfile(idea: string, graph: Record<string, any>): ResearchProfileV12 {
   const capabilities = inferCapabilities(idea, graph)

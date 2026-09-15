@@ -1,5 +1,5 @@
-import type { ProductBlueprint, SelectedRepo, NodeContract } from './types.js'
-import { reposForRole } from './architecture.js'
+import type { ProductBlueprint, SelectedRepo, NodeContract } from './types'
+import { reposForRole } from './architecture'
 
 export function buildContracts(blueprint: ProductBlueprint, selected: SelectedRepo[]): Record<string, NodeContract> {
   const securityEnabled = reposForRole(selected, 'security').length > 0

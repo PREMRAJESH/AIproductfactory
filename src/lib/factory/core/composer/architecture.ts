@@ -1,4 +1,4 @@
-import type { SelectedRepo, RepoRole, ProductBlueprint, ArchitectureNode, ArchitectureEdge } from './types.js'
+import type { SelectedRepo, RepoRole, ProductBlueprint, ArchitectureNode, ArchitectureEdge } from './types'
 
 export function reposForRole(selected: SelectedRepo[], role: RepoRole): SelectedRepo[] {
   return selected.filter(repo => repo.role === role)
