@@ -17,6 +17,7 @@ import {
 import { safelyUpdateRun, advanceRunStep } from '@/lib/factory/build/pipeline-tracker'
 import { fetchRepoCandidates } from '@/lib/factory/build/github-repos'
 import { normalizePythonResult, normalizeTypeScriptResult } from '@/lib/factory/build/normalizers'
+export { normalizePythonResult, normalizeTypeScriptResult }
 import type { TimelineEntry } from '@/lib/factory/build/schemas'
 import type { PipelineMode } from '@/lib/factory/pipeline-run'
 
